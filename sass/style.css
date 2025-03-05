@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* /////////////
+Fichier principal de la structure Sass
+/////////////// */
+/* /////////////
+Les variables
+//////////////*/
+/* /////////////
+Les règles de base
+/////////////// */
+a {
+  color: #595;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: clamp(1rem, 10vh + 5px, 4rem);
+}
+
+/* /////////////
+Les composants
+/////////////// */
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,128 @@
+.global {
+   margin : 0 auto;
+   width: 100%;
+   max-width: 1000px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   min-height: 75vh;
+}
+
+
+.hero{
+    min-height: 100vh;
+    background-image: url("images/galaxie.jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__titre{
+        font-size: 3em;
+        color: rgb(227, 215, 251);
+        text-shadow: 3px 3px 2px rgb(55, 42, 82);
+        @media screen and (max-width:$point__rupture){
+            font-size: 2em;
+        }
+    }
+    &__description{
+        font-weight: bold;
+        font-size: 1em;
+        width: 50vw;
+        padding: 0.5em;
+        border-radius: 1em;
+        background-color:rgb(227, 215, 251);
+        @media screen and (max-width:$point__rupture){
+            width: 60vw;
+        }
+    }
+    &__infos{
+        color: white;
+        font-weight: bold;
+    }
+    &__infos a{
+        text-decoration: none;
+        color: white;
+    }
+    &__bouton{
+        display: block;
+        padding: 2vw;
+        border-radius: 2em;
+        font-size: 2em;
+        height: fit-content;
+        align-self: center;
+    }
+    &__icone-app{
+        align-self: center;
+    }
+    &__icone-app img{
+        background-color: white;
+        padding: 1px;
+        margin: 1px;
+        border-radius: 10px;
+        width: 2em;
+    }
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: mediumpurple;
+}
+.formulaire form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    background-color:rgb(227, 215, 251);
+    padding: 1em;
+    border: 3px solid rgb(93, 16, 129);
+    border-radius: 1em;
+    box-shadow: 3px 3px rgb(48, 8, 67);
+
+}
+form .input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+input{
+    display: block;
+    width: 10em;
+}
+.inscrire{
+    width: fit-content;
+    height: fit-content;
+}
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.galerie__fig{
+    width: 18vw;
+    height: 36vh;
+    margin-top: 1em;
+}
+.galerie div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+
+// ADAPTATIF
+
+@media screen and (max-width:$point__rupture) {
+    .galerie__fig{
+        width: 36vw;
+        height: 30vh;
+        margin-top: 1em;
+    }
+    .formulaire{
+        display: none;
+    }
+}

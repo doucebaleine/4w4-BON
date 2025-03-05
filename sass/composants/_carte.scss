@@ -1,0 +1,64 @@
+/* *******************
+Le composant .carte
+********************** */
+
+.carte {
+    border: 2px solid #ed7ac5;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 250px;
+  
+    &--grande {
+      padding: 40px;
+      margin: 1em;
+    }
+    &--petite {
+      padding: 20px;
+    }
+    &__image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  
+    &__contenu {
+      margin-top: 15px;
+    }
+  
+    &__titre {
+      font-size: 24px;
+      color: #333;
+    }
+  
+    &__description {
+      font-size: 16px;
+      color: #666;
+    }
+  
+    &__bouton {
+      padding: 10px 20px;
+      background-color: #6329a7;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &--actif {
+        background-color: #6329a7;
+      }
+  
+      &:hover {
+        background-color: #6329a7;
+      }
+    }
+    &__categorie a{
+      text-decoration: none;
+      background-color: #c2a4f1;
+      color: white;
+      padding: 0.5em;
+      border-radius: 1em;
+    }
+  }
+  

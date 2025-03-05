@@ -1,0 +1,38 @@
+/*
+Theme Name: 4W4 - Eddy Martin
+Theme URI: https://referenced.ca
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
+Description: Thème de base développer dans le cadre du cours 4W4
+Version: 1.0
+Tested up to: 6.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4w4-eddy
+*/
+
+/* /////////////////////
+Les Variables
+//////////////////////// */
+@import "variables/couleurs";
+@import "variables/dimensions";
+
+/* /////////////////////////
+Les composants
+/////////////////////////// */
+@import "composants/menu";
+@import "composants/carte";
+@import "composants/recherche";
+@import "composants/carte";
+@import "composants/galerie";
+
+/* /////////////////////////
+Layout 
+/////////////////////////// */
+@import "layout/principal";
+@import "layout/entete";
+@import "layout/footer";
+@import "layout/general";
+@import "layout/hero";
+@import "layout/footer";

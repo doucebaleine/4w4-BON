@@ -1,0 +1,51 @@
+footer{
+    background-color: pink;
+}
+.piedpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    &__s1{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        // margin: 2em;
+        gap: 3rem;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        &__externe{
+            
+            flex: 0 0 20%;
+            & .menu{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__adresse{
+            flex: 0 0 40%;
+            &___coord{}
+            &__recherche{}
+        }
+        &__description{
+            flex: 1;
+        }
+        // Pour sélectionner les sections de la premières partie du footer
+        div{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__s2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        &__menu a{
+            font-size: 20px;
+        }
+    }
+}

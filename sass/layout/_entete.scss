@@ -1,0 +1,46 @@
+.entete{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    background-color: rgb(255, 177, 237);
+
+    &__menu {
+        display: flex;
+        background-color: rgba(247, 227, 231, 0.733);
+        border-radius: 1em;
+        padding: 1rem;
+        @media screen and (max-width:$point__rupture) {
+            flex-direction: column;
+            display: none;
+        }
+        flex-direction: row; 
+        align-items: center;
+        gap: 0 40px;
+        flex-wrap: wrap;
+        a{
+            color: rgb(66, 22, 41);
+            font-size: 20px;
+        }
+
+    }
+    .custom-logo {
+        max-width: 150px;
+        height: auto;
+    }
+    &__burger{
+        display: none;
+        @media screen and (max-width:$point__rupture) {
+            display: flex;
+        }
+    }
+    &__checkbox{
+        display: none;
+    }
+    &__checkbox:checked ~ &__menu{
+        display: block;
+    }
+}
+
+
+
