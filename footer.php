@@ -1,3 +1,8 @@
+
+<?php $footer_mission = get_theme_mod("footer_mission","");?>
+<?php $footer_adresse = get_theme_mod("footer_adresse","");?>
+<?php $footer_courriel = get_theme_mod("footer_courriel","");?>
+
 <footer>
     <!-- FOOTER -->
     <div class="piedpage">
@@ -13,9 +18,9 @@
         <div class="piedpage__s1__adresse">
         <h2 class="piedpage__s1__adresse__titre">Plus d'informations</h2>
             <div class="piedpage__s1_adresse__coord">
-            <p>209 rue des Oiseaux, Saturne <br>
+            <p><?php echo $footer_adresse;?> <br>
                 <a href="">
-                    interstellaire@cmaisonneuve.qc.ca
+                <?php echo $footer_courriel;?>
                 </a>
             </p>
             </div>
@@ -25,7 +30,7 @@
         </div>
         <div class="piedpage__s1__description">
             <h2 class="piedpage__s1__description__titre">À propos de nous</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, modi facilis obcaecati dolore est voluptatem, rem officia sint eveniet maiores omnis unde, neque explicabo cum! Cumque officia vel totam rerum?</p>
+            <p><?php echo $footer_mission;?></p>
         </div>
     </section>
     <!-- 2e section footer -->

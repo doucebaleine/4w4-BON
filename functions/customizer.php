@@ -28,16 +28,60 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'label' => __('Image background', 'theme_tp'),
   'section' => 'hero_section',
 )));
-
+// Ajout d'un réglage pour la couleur
 $wp_customize->add_setting('hero_color', array(
   'default' => '',
   'sanitize_callback' => 'esc_url_raw',
 ));
+// Ajout d'un contrôle pour la couleur
 $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "hero_color", array(
   "label"=> __("Couleur icone sociaux", "theme_tp"),
   "section" => "hero_section",
   // "settings" => "hero_icone",
 )));
+
+
+// SECTION FOOTER
+// Début de la section footer
+  // Le code pour ajouter des sections, des réglages et des contrôles ira ici.
+$wp_customize->add_section('footer_section', array(
+  'title' => __('Footer Section', 'theme_tp'),
+  'priority' => 30,
+));
+// Ajout de réglage et contrôle pour la Mission
+$wp_customize->add_setting('footer_mission', array(
+  'default' => __('mission footer', 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field',
+));
+
+$wp_customize->add_control('footer_mission', array(
+  'label' => __('Mission', 'theme_tp'),
+  'section' => 'footer_section',
+  'type' => 'text',
+));
+// Ajout de réglage et contrôle pour l'adresse
+$wp_customize->add_setting('footer_adresse', array(
+  'default' => __('adresse footer', 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field',
+));
+
+$wp_customize->add_control('footer_adresse', array(
+  'label' => __('Adresse', 'theme_tp'),
+  'section' => 'footer_section',
+  'type' => 'text',
+));
+
+// Ajout de réglage et contrôle pour le courriel
+$wp_customize->add_setting('footer_courriel', array(
+  'default' => __('courriel footer', 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field',
+));
+
+$wp_customize->add_control('footer_courriel', array(
+  'label' => __('Courriel', 'theme_tp'),
+  'section' => 'footer_section',
+  'type' => 'text',
+));
+
 }
 add_action('customize_register', 'theme_tp_customize_register');
-?>
