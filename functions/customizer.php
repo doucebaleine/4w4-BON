@@ -29,6 +29,10 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'section' => 'hero_section',
 )));
 }
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "hero_color", array(
+  "label"=> __("Couleur icone sociaux", "mon_theme"),
+  "section" =>
+)))
 
 add_action('customize_register', 'theme_tp_customize_register');
 ?>
