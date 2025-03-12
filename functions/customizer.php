@@ -28,11 +28,16 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'label' => __('Image background', 'theme_tp'),
   'section' => 'hero_section',
 )));
-}
-$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "hero_color", array(
-  "label"=> __("Couleur icone sociaux", "mon_theme"),
-  "section" =>
-)))
 
+$wp_customize->add_setting('hero_color', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "hero_color", array(
+  "label"=> __("Couleur icone sociaux", "theme_tp"),
+  "section" => "hero_section",
+  // "settings" => "hero_icone",
+)));
+}
 add_action('customize_register', 'theme_tp_customize_register');
 ?>
