@@ -464,4 +464,13 @@ footer {
 }
 .piedpage__s2__menu a {
   font-size: 20px;
+}
+
+.global__erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(249, 125, 145);
+  margin: 1em;
+  border-radius: 10em;
 }/*# sourceMappingURL=style.css.map */
