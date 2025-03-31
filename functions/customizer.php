@@ -84,19 +84,30 @@ $wp_customize->add_control('footer_courriel', array(
 ));
 
 //////SECTION 404
-$wp_customize->add_section('erreur_texte', array(
+$wp_customize->add_section('section_404', array(
   'title' => __('Erreur Section', 'theme_tp'),
   'priority' => 30,
 ));
 
-$wp_customize->add_setting('erreur_texte', array(
+$wp_customize->add_setting('404_titre', array(
+  'default' => __('titre erreur', 'theme_tp'),
+  'sanitize_callback' => 'sanitize_text_field',
+));
+
+$wp_customize->add_control('404_titre', array(
+  'label' => __('Titre', 'theme_tp'),
+  'section' => 'section_404',
+  'type' => 'text',
+));
+
+$wp_customize->add_setting('404_texte', array(
   'default' => __('texte erreur', 'theme_tp'),
   'sanitize_callback' => 'sanitize_text_field',
 ));
 
-$wp_customize->add_control('erreur_texte', array(
+$wp_customize->add_control('404_texte', array(
   'label' => __('Texte', 'theme_tp'),
-  'section' => 'footer_section',
+  'section' => 'section_404',
   'type' => 'text',
 ));
 
