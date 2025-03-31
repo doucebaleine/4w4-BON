@@ -188,7 +188,6 @@ Layout
 
 .hero {
   min-height: 100vh;
-  background-image: url("images/galaxie.jpg");
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,7 +413,6 @@ footer {
 }
 
 .hero {
-  background-image: url(images/galaxie.jpg);
   min-height: 100vh;
 }
 
@@ -472,7 +470,6 @@ footer {
   align-items: center;
   justify-content: space-around;
   font-size: larger;
-  background-image: url("images/ilepalmier.jpg");
   object-fit: cover;
 }
 

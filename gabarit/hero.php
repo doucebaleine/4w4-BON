@@ -1,6 +1,6 @@
 <?php $hero_background = get_theme_mod('hero_background', ''); ?>
 <!-- Gabarit pour hero -->
-<section class="hero">
+<section class="hero" style="background-image: url('<?= $hero_background ?>')">
         <div class="hero__contenu global">
             <!-- Partie principale -->
             <h1 class="hero__titre">
