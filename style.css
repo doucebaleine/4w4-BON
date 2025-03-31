@@ -495,4 +495,15 @@ footer {
   text-align: center;
   background-color: rgba(255, 192, 203, 0.75);
   padding: 0.5em;
+}
+
+.bouton_accueil {
+  text-decoration: none;
+  text-align: center;
+  background-color: #431b85;
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
