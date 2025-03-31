@@ -89,6 +89,7 @@ $wp_customize->add_section('section_404', array(
   'priority' => 30,
 ));
 
+/// TITRE 404
 $wp_customize->add_setting('404_titre', array(
   'default' => __('titre erreur', 'theme_tp'),
   'sanitize_callback' => 'sanitize_text_field',
@@ -100,6 +101,7 @@ $wp_customize->add_control('404_titre', array(
   'type' => 'text',
 ));
 
+/// TEXTE 404
 $wp_customize->add_setting('404_texte', array(
   'default' => __('texte erreur', 'theme_tp'),
   'sanitize_callback' => 'sanitize_text_field',
@@ -110,6 +112,17 @@ $wp_customize->add_control('404_texte', array(
   'section' => 'section_404',
   'type' => 'text',
 ));
+
+// BACKGROUND 404
+$wp_customize->add_setting('404_background', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+// Ajout d'un contrôle pour le background
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, '404_background', array(
+  'label' => __('Image background', 'theme_tp'),
+  'section' => 'section_404',
+)));
 
 }
 add_action('customize_register', 'theme_tp_customize_register');

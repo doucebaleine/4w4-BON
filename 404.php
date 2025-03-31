@@ -3,12 +3,12 @@
 
 <?php get_header(); ?>
     <section class="global__erreur">
-        <h1><?php echo $erreur_titre;?></h1>
-        <p><?php echo $erreur_texte;?></p>
+        <h1 class="404_titre"><?php echo $erreur_titre;?></h1>
+        <p class="404_texte"><?php echo $erreur_texte;?></p>
         <?php wp_nav_menu(array(
                     "menu" => "menu_404",
                     "container" => "nav",
-                    "container_class" => "404__menu"
+                    "container_class" => "menu__404"
             )); ?>
     </section>
     <footer></footer>
