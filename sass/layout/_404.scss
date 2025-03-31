@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    // background-color: rgb(249, 125, 145);
-    margin: 1em;
-    border-radius: 10em;
-    height: 50vh;
+    justify-content: space-around;
+    font-size: larger;
+    // height: 100vh;
+    background-image: url("images/ilepalmier.jpg");
+    object-fit: cover;
 }
 .menu__404 a{
     display: flex;
@@ -18,4 +18,15 @@
     color: white;
     padding: 0.5em;
     border-radius: 1em;
+    margin: 1em;
+}
+.texte_404{
+    width: 50vw;
+    background-color: rgba(255, 192, 203, 0.75);
+    padding: 0.5em;
+}
+.titre_404{
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.75);
+    padding: 0.5em;
 }

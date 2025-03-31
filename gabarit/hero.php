@@ -1,3 +1,4 @@
+<?php $hero_background = get_theme_mod('hero_background', ''); ?>
 <!-- Gabarit pour hero -->
 <section class="hero">
         <div class="hero__contenu global">

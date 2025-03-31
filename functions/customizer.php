@@ -123,6 +123,17 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, '404_ba
   'label' => __('Image background', 'theme_tp'),
   'section' => 'section_404',
 )));
+// Ajout d'un réglage pour la couleur du text
+$wp_customize->add_setting('404_color', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+// Ajout d'un contrôle pour la couleur
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "404_color", array(
+  "label"=> __("Couleur texte", "theme_tp"),
+  "section" => "section_404",
+  // "settings" => "hero_icone",
+)));
 
 }
 add_action('customize_register', 'theme_tp_customize_register');
