@@ -7,6 +7,7 @@
   <div class="carte__contenu">
     <h4 class="carte__titre"><?php the_title(); ?></h4>
     <h3 class="carte__categorie"><?php the_category(" "); ?></h3>
+    <?php  $tableau = get_the_category(); ?>
     <p class="carte__description"><?php echo wp_trim_words(get_the_content(), 10, "..."); ?></p>
     <p>Température maximum : <?php the_field("temperature_maximum")?></p>
     <p>Température minimum : <?php the_field("temperature_minimum")?></p>

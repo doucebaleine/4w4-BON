@@ -1,7 +1,16 @@
-<?php $hero_background = get_theme_mod('hero_background', ''); ?>
+<?php 
+// $hero_background = get_theme_mod('hero_background', ''); 
+$hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+for ($k=0; $k<3; $k++){
+    $hero_background[$k] = get_theme_mod('hero_background_'. $k, '');
+    }
+?>
 <!-- Gabarit pour hero -->
-<section class="hero" style="background-image: url('<?= $hero_background ?>')">
-        <div class="hero__contenu global">
+<section class="hero">
+    <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
+    <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[1] ?>)"></div>
+    <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[2] ?>)"></div>
+    <div class="hero__contenu global">
             <!-- Partie principale -->
             <h1 class="hero__titre">
                 Interstellaire, là où vos rêves <br>

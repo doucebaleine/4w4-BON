@@ -1,11 +1,16 @@
 <?php
-// Définir le chemin vers le dossier "functions"
+
+// Chemin vers le dossier functions
 $functions_dir = get_template_directory() . '/functions/';
 
-// Inclure les fichiers spécifiques
-include_once $functions_dir . 'customizer.php';
+// Liste des fichiers à inclure
+$function_files = array(
+    'genere-boutons.php',
+    'customizer.php',
+    'options.php'
+);
 
-// Inclure d'autres fichiers si nécessaire
-include_once $functions_dir . 'options.php';
-// include_once $functions_dir . 'encore-un-autre.php';
-?>
+// Boucle pour inclure tous les fichiers
+foreach ($function_files as $file) {
+    include_once $functions_dir . $file;
+}

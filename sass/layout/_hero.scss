@@ -1,4 +1,18 @@
 .hero{
     // background-image: url(images/galaxie.jpg);
     min-height: 100vh;
+    
+    
 }
+.hero__carrousel{
+    position : absolute;
+    min-height: 100vh;
+    width : 100%;
+    background-position: center;
+    z-index : -1;
+}
+// .article__list div {
+//     margin-bottom: 20px;
+//     padding: 10px;
+//     border-bottom: 1px solid #ccc;
+// }
