@@ -173,6 +173,15 @@ Le composant .carte
   border-radius: 1em;
 }
 
+.destination_texte {
+  font-size: 0;
+}
+
+.visible {
+  font-size: 1rem;
+  background-color: pink;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
