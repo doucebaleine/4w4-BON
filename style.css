@@ -427,6 +427,8 @@ footer {
 
 .hero__carrousel {
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   width: 100%;
   background-position: center;
