@@ -10,6 +10,21 @@
     width : 100%;
     background-position: center;
     z-index : -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    // display: none;
+    &.actif{
+        opacity: 1;
+        transition: opacity 0.5s ease;
+
+    }
+}
+.hero__radio{
+    display: flex;
+    flex-direction: row;
+    width: 1em;
+    justify-content: space-between;
+    align-items: center;
 }
 // .article__list div {
 //     margin-bottom: 20px;
