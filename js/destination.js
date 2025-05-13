@@ -14,9 +14,9 @@
 
             // console.log("destination.js")
       const categoryId = bouton.getAttribute("data-category_id"); // Remplacez par l'ID de la catégorie souhaitée
-      const domaine = window.location.href
+      const domaine = document.querySelector('base').href;
       const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
-      console.log(apiUrl)
+    //   console.log(apiUrl)
       parcourir_bouton()
   
     function parcourir_bouton(){
