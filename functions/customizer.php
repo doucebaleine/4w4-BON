@@ -83,6 +83,27 @@ $wp_customize->add_control('footer_courriel', array(
   'type' => 'text',
 ));
 
+$wp_customize->add_setting('footer_couleur', array(
+    'default' => __('Vague', 'theme_31w'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'footer_couleur', array(
+    'label' => __('Couleur du footer', 'theme_31w'),
+    'section' => 'footer_section',
+  )));
+
+  $wp_customize->add_setting('footer_vague_opacite', array(
+    'default' => __('Vague Opacite', 'theme_31w'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_vague_opacite', array(
+    'label' => __('Opacité de la vague', 'theme_31w'),
+    'section' => 'footer_section',
+    'type' => 'number',
+  ));
+
 //////SECTION 404
 $wp_customize->add_section('section_404', array(
   'title' => __('Erreur Section', 'theme_tp'),
