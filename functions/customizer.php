@@ -148,5 +148,96 @@ for ($k = 0; $k<3 ; $k++) {
     'section' => 'hero_section',
   )));
 }
+
+
+///// SECTION ICONES
+ $wp_customize->add_section('icones_section', array(
+    'title' => __('Personnalisation icones', 'theme_tp'),
+    'priority' => 29,
+  ));
+
+$wp_customize->add_setting('icone_image1', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icone_image1', array(
+    'label' => __('Image Icone 1', 'theme_tp'),
+    'section' => 'icones_section',
+  )));
+
+  $wp_customize->add_setting('icone_url1', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control('icone_url1', array(
+    'label' => __('Icone 1 URL', 'theme_tp'),
+    'section' => 'icones_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('icone_image2', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icone_image2', array(
+    'label' => __('Image Icone 2', 'theme_tp'),
+    'section' => 'icones_section',
+  )));
+
+  $wp_customize->add_setting('icone_url2', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control('icone_url2', array(
+    'label' => __('Icone 2 URL', 'theme_tp'),
+    'section' => 'icones_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('icone_image3', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icone_image3', array(
+    'label' => __('Image Icone 3', 'theme_tp'),
+    'section' => 'icones_section',
+  )));
+
+  $wp_customize->add_setting('icone_url3', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control('icone_url3', array(
+    'label' => __('Icone 3 URL', 'theme_tp'),
+    'section' => 'icones_section',
+    'type' => 'text',
+  ));
+
+  $wp_customize->add_setting('icone_image4', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icone_image4', array(
+    'label' => __('Image Icone 4', 'theme_tp'),
+    'section' => 'icones_section',
+  )));
+
+  $wp_customize->add_setting('icone_url4', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control('icone_url4', array(
+    'label' => __('Icone 4 URL', 'theme_31w'),
+    'section' => 'icones_section',
+    'type' => 'text',
+  ));
 }
 add_action('customize_register', 'theme_tp_customize_register');
