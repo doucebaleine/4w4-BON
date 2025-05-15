@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<?php $single_auteur = get_theme_mod('hero_auteur', ''); ?>
+<?php $date_publication = get_the_date("j F Y"); ?>
+
     <!-- <h1>-------- single-post.php ----------</h1> -->
     <section class="populaire">
         <div class="global">
@@ -11,10 +14,13 @@
             ?>  
                 <h2><?php the_title(); ?></h2>
                 <div><?php the_content() ?>
-                <?php the_category(); ?>
-                <?php  $tableau = get_the_category(); 
-                // print_r ($tableau);
-                ?>
+                <?php categorie_par_destination(""); ?>
+               
+                <p>
+                    <?php echo $single_auteur; ?>
+                </p>
+                <?php echo $date_publication; ?>
+                
                 <p>Température maximum: <?php the_field('temperature_maximum') ?>&#176;C</p>
                 <p>Température minimum: <?php the_field('temperature_minimum') ?>&#176;C</p>
                 <p>Température moyenne: <?php the_field('temperature_moyenne') ?>&#176;C</p>

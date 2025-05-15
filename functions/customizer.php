@@ -9,7 +9,7 @@ function theme_tp_customize_register($wp_customize) {
 ));
 // Ajout d'un réglage pour  l'auteur
   $wp_customize->add_setting('hero_auteur', array(
-    'default' => __('Laurence Mongeau', 'theme_tp'),
+    'default' => __('Laurence fvhijdjbkjam', 'theme_tp'),
     'sanitize_callback' => 'sanitize_text_field'
   ));
 // Ajout d'un contrôle pour l'auteur

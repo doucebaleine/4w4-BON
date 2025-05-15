@@ -17,6 +17,7 @@ for ($k=0; $k<3; $k++){
                 Interstellaire, là où vos rêves <br>
                 prennent leur envol.✨🚀
             </h1>
+            <?php echo $hero_auteur; ?>
             <p class="hero__description">
                 Avec une équipe d'experts passionnés, des navettes ultramodernes et un service de conciergerie galactique, chaque voyage devient une expérience inoubliable, alliant confort, sécurité et émerveillement. <br> <br>
                 Prêt à embarquer pour la prochaine aventure? Le cosmos vous attend.
