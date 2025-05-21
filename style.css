@@ -182,6 +182,26 @@ Le composant .carte
   background-color: pink;
 }
 
+.categorie__ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.boutonCat {
+  border: 2px solid rgb(252, 139, 218);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.actif {
+  background-color: rgb(90, 0, 139);
+  color: white;
+}
+
 /* /////////////////////////
 Layout 
 /////////////////////////// */
@@ -364,7 +384,8 @@ input {
 }
 
 footer {
-  background-color: #c98dad;
+  background-color: #b7819e;
+  margin-top: 0;
 }
 
 .piedpage {
@@ -409,6 +430,14 @@ footer {
 }
 .piedpage__s2__menu a {
   font-size: 20px;
+}
+.piedpage__s2__rs {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__vague {
+  background-color: white;
 }
 
 .global {
@@ -475,7 +504,8 @@ footer {
   }
 }
 footer {
-  background-color: #c98dad;
+  background-color: #b7819e;
+  margin-top: 0;
 }
 
 .piedpage {
@@ -520,6 +550,14 @@ footer {
 }
 .piedpage__s2__menu a {
   font-size: 20px;
+}
+.piedpage__s2__rs {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__vague {
+  background-color: white;
 }
 
 .global__erreur {

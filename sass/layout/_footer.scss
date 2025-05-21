@@ -1,5 +1,6 @@
 footer{
-    background-color: #c98dad;
+    background-color: #b7819e;
+    margin-top: 0;
 }
 .piedpage{
     display: flex;
@@ -47,5 +48,12 @@ footer{
         &__menu a{
             font-size: 20px;
         }
+        &__rs{
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
+.footer__vague{
+        background-color: white;
+    }

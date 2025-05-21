@@ -7,3 +7,23 @@
     background-color: pink;
 
 }
+.categorie__ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.boutonCat{
+    border: 2px solid rgb(252, 139, 218);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.actif{
+    background-color: rgb(90, 0, 139);
+    color: white;
+    
+}

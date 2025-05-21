@@ -7,10 +7,15 @@
     boutons.forEach(function(bouton){
         bouton.addEventListener("click", function(){
             console.log("bouton cliquer");
-            boutons.forEach(function(bouton){
+            if (bouton.classList.contains("actif")){
+                bouton.classList.remove("actif")
+            } else {
+                boutons.forEach(function(bouton){
                 bouton.classList.remove("actif");
-            })
-            bouton.classList.add("actif");
+                })
+                bouton.classList.add("actif");
+            }
+            
 
             // console.log("destination.js")
       const categoryId = bouton.getAttribute("data-category_id"); // Remplacez par l'ID de la catégorie souhaitée
@@ -28,8 +33,7 @@
               console.log("elm.dataset.category_id = " , elm.dataset.category_id)
           })
       })
-  
-  }
+    }
   
   
       fetch(apiUrl)
