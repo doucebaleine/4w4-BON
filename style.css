@@ -215,6 +215,7 @@ Le composant .carte
 
 .pays__description {
   width: 75%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

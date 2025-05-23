@@ -49,4 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .catch(error => console.error('Erreur lors de la récupération des articles:', error));
         });
     });
+    // Ne fonctionne pas
+    const boutonFrance = document.querySelector('[data-search="france"]');
+    if (boutonFrance) {
+        boutonFrance.click();
+    }
 });
