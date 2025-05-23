@@ -200,6 +200,7 @@ Le composant .carte
 .actif {
   background-color: rgb(90, 0, 139);
   color: white;
+  transition: 1s;
 }
 
 .page__pays {
@@ -218,6 +219,12 @@ Le composant .carte
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.destination_titre {
+  width: 100%;
+  background-color: pink;
+  padding: 1em;
 }
 
 /* /////////////////////////
