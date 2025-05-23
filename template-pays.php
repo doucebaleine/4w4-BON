@@ -8,6 +8,8 @@ get_header();
     <div class="global">
         <h1 class="pays__titre">Les plus beau pays</h1>
         <p class="pays__description">Plongez au cœur de l’aventure et laissez-vous emporter par l’appel du large ! Notre planète regorge de destinations incroyables, chacune promettant une expérience unique et mémorable. Que vous rêviez de plages idylliques baignées de soleil, de sommets majestueux invitant à la randonnée, de villes vibrantes d’histoire et de modernité, ou de rencontres culturelles authentiques, il y a un pays fait pour vous.</p>
+        <?php echo apply_filters('the_content', get_post_field('post_content', get_the_ID())); ?>
+   
         <?php creer_vague("#ffd6e0", "#ffb6c1"); ?> <!-- Vague rose pâle -->
         <!-- ////////////////////////////////////////////////  section rest-api -->
         <div class="pays__boutons">
