@@ -16,7 +16,7 @@
      <section class="destination">
         <?php categories_liste("destination", "Populaire") ?>
         <h2 class="destination__titre">Articles de la catégorie</h2>
-        <div class="destination__list"></div>
+        <div data-method = "category" class="destination__list"></div>
     </section>
     
     <footer>
